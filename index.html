@@ -23,7 +23,7 @@
     <body class="bg-[#f3f4f6]">
         <main class="w-full flex justify-center items-center">
             <section
-                class="w-[90%] md:w-[60%] lg:w-[40%] bg-white shadow-2xl rounded-2xl p-5 m-20"
+                class="w-[95%] md:w-[60%] lg:w-[40%] bg-white shadow-2xl rounded-2xl p-5 my-20"
             >
                 <!-- Header area -->
                 <header>
@@ -55,28 +55,32 @@
                         <label class="label">
                             <span class="label-text text-2xl font-semibold"
                                 ><i
-                                    class="fa-solid fa-bangladeshi-taka-sign"
+                                    class="fa-solid fa-bangladeshi-taka-sign text-[#2c60ea]"
                                 ></i>
                                 Income</span
                             >
                         </label>
                         <input
+                            id="income-input"
                             class="border py-3 text-xl px-2 rounded-xl w-full"
                             type="text"
                             placeholder="Enter your income"
                         />
                     </div>
 
-                    <div class="grid grid-cols-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                         <div>
                             <label class="label">
                                 <span class="label-text text-2xl font-semibold"
-                                    ><i class="fa-brands fa-uncharted"></i>
+                                    ><i
+                                        class="fa-brands fa-uncharted text-[#2c60ea]"
+                                    ></i>
                                     Software</span
                                 >
                             </label>
                             <input
-                                class="border py-3 text-xl px-2 rounded-xl"
+                                id="software-cost-input"
+                                class="w-full md:w-max lg:w-max border py-3 text-xl px-2 rounded-xl"
                                 type="text"
                                 placeholder="Enter software cost"
                             />
@@ -84,12 +88,15 @@
                         <div>
                             <label class="label">
                                 <span class="label-text text-2xl font-semibold"
-                                    ><i class="fa-solid fa-microchip"></i>
+                                    ><i
+                                        class="fa-solid fa-microchip text-[#2c60ea]"
+                                    ></i>
                                     Hardware</span
                                 >
                             </label>
                             <input
-                                class="border py-3 text-xl px-2 rounded-xl"
+                                id="hardware-cost-input"
+                                class="w-full md:w-max lg:w-max border py-3 text-xl px-2 rounded-xl"
                                 type="text"
                                 placeholder="Enter hardware cost"
                             />
@@ -97,12 +104,15 @@
                         <div>
                             <label class="label">
                                 <span class="label-text text-2xl font-semibold"
-                                    ><i class="fa-brands fa-discourse"></i>
+                                    ><i
+                                        class="fa-brands fa-discourse text-[#2c60ea]"
+                                    ></i>
                                     Course</span
                                 >
                             </label>
                             <input
-                                class="border py-3 text-xl px-2 rounded-xl"
+                                id="course-cost-input"
+                                class="w-full md:w-max lg:w-max border py-3 text-xl px-2 rounded-xl"
                                 type="text"
                                 placeholder="Enter course cost"
                             />
@@ -110,45 +120,50 @@
                         <div>
                             <label class="label">
                                 <span class="label-text text-2xl font-semibold"
-                                    ><i class="fa-solid fa-wifi"></i>
+                                    ><i
+                                        class="fa-solid fa-wifi text-[#2c60ea]"
+                                    ></i>
                                     Internet</span
                                 >
                             </label>
                             <input
-                                class="border py-3 text-xl px-2 rounded-xl"
+                                id="internet-cost-input"
+                                class="w-full md:w-max lg:w-max border py-3 text-xl px-2 rounded-xl"
                                 type="text"
                                 placeholder="Enter internet cost"
                             />
                         </div>
                     </div>
-                    <button
-                        class="btn w-full my-4 bg-gradient-to-r from-[#2b60eb] to-[#883cc8] text-white"
-                    >
-                        Calculate
-                    </button>
-
                     <!-- Savings section start -->
                     <div>
                         <label class="label">
                             <span class="label-text text-2xl font-semibold"
-                                ><i class="fa-solid fa-money-bill-1-wave"></i>
+                                ><i
+                                    class="fa-solid fa-money-bill-1-wave text-[#2c60ea]"
+                                ></i>
                                 Savings</span
                             >
                         </label>
                         <input
+                            id="savings-input"
                             class="border py-3 text-xl px-2 rounded-xl w-full"
                             type="text"
                             placeholder="Enter internet cost"
                         />
                     </div>
                     <button
+                        id="calculate-btn"
                         class="btn w-full my-4 bg-gradient-to-r from-[#2b60eb] to-[#883cc8] text-white"
                     >
-                        Savings
+                        Calculate
                     </button>
                     <!-- Savings section  end -->
                 </section>
                 <!-- Input area end -->
+
+                <!-- Result -->
+                <div id="result"></div>
+                <!-- Result end -->
             </section>
         </main>
 
